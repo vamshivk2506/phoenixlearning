@@ -20,12 +20,12 @@ jobs:
          node-version: '18'
 
     - name: Install newman
-      run:
+      run: |
         npm install -g newman
         npm install -g newman-reporter-htmlextra
 
     - name: Run Collection
-      run:
+      run: |
          newman run 'Phoenix Inwarranty-flow Collection.postman_collection.json' \
          -e QA.postman_environment.json \
          -r cli,htmlextra 
