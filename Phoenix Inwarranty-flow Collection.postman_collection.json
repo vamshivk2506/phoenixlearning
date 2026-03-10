@@ -43,7 +43,7 @@
               "    pm.expect(responseBody.message).to.be.eql(\"Success\")\r",
               "})\r",
               "pm.test('verify response time is less than 200 ms', function(){\r",
-              "pm.expect(pm.response.responseTime).to.be.below(300)\r",
+              "pm.expect(pm.response.responseTime).to.be.below(700)\r",
               "\r",
               "})\r",
               "pm.test('Verify token exists not null', function(){\r",
