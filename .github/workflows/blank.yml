@@ -26,7 +26,7 @@ jobs:
 
     - name: Run Collection
       run:
-         newman run Inwarranty-flow\ Collection\ Copy.postman_collection.json' \
+         newman run 'Inwarranty-flow Collection Copy.postman_collection.json' \
          -e QACopy.postman_environment.json \
          -r cli,htmlextra 
 
