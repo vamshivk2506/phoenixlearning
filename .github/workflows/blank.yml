@@ -26,8 +26,8 @@ jobs:
 
     - name: Run Collection
       run:
-         newman run 'Inwarranty-flow Collection Copy.postman_collection.json' \
-         -e QACopy.postman_environment.json \
+         newman run 'Phoenix Inwarranty-flow Collection.postman_collection.json' \
+         -e QA.postman_environment.json \
          -r cli,htmlextra 
 
     - name: Upload Report
